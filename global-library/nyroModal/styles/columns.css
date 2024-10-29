@@ -1,0 +1,76 @@
+
+/* ------------------------------------------
+   LAYOUT
+------------------------------------------- */ 
+
+#column-wrap {
+	clear: both;
+	float: left;
+	width: 940px;
+	padding: 10px 0 50px 0;		
+	background: #ffffff;		
+	border-bottom: 2px solid #FFF;
+	border: solid 0px;
+}
+#column-wrap a {
+	text-decoration: none;
+	color: #009900;;	
+}
+#column-wrap a:hover {
+	color: #000;	
+}
+#column-wrap h3 {
+	color: #fff;	
+	margin: 0 0 0px 0;	
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: none;
+	padding-top: 0px;
+	font-family: Calibri;
+	
+}
+
+#columns {
+	color: #888;
+	margin: 0 auto; 
+	padding: 0;	
+	width: 790px;		
+	background: transparent;
+}
+#columns ul {
+	list-style: none;
+	margin: 10px 0 0 0;
+	padding: 0;	
+	background: url(images/footer-dots.gif) repeat-x left top;	
+}
+#columns li {
+	background: url(images/footer-dots.gif) repeat-x left bottom;	
+	color: #009933;
+	padding: 5px 0 6px 0px;
+	font-size: 13px;
+	text-shadow: 0 0 0.1em #fff;
+	font-weight: bold;
+}
+#columns li a {
+	display: block;
+	color: #009933;
+	font-weight: normal;
+	padding: 5px 0 6px 0px;
+	width: 96%;
+	font-size: 13px;
+	text-shadow: 0 0 0.1em #fff;
+	font-weight: bold;
+}
+#columns .col3, .col3-center {
+	float: left;
+	width: 32%;
+}
+#columns .col3-center { 
+	margin: 0 15px; 
+}
+#title {
+	border: solid 1px;
+	text-align: center;
+	background-color: #006600;
+	
+}

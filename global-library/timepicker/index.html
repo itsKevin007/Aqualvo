@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <title>jQuery UI Time Picker by Francois Gelinas</title>
+    <link rel="stylesheet" href="include/ui-1.10.0/ui-lightness/jquery-ui-1.10.0.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="jquery.ui.timepicker.css?v=0.3.2" type="text/css" />
+
+    <script type="text/javascript" src="include/jquery-1.9.0.min.js"></script>
+    
+    
+    
+    <script type="text/javascript" src="include/ui-1.10.0/jquery.ui.position.min.js"></script>
+
+    <script type="text/javascript" src="jquery.ui.timepicker.js?v=0.3.2"></script>
+
+   
+    <style type="text/css">
+        /* some styling for the page */
+        body { font-size: 10px; /* for the widget natural size */ }
+        #content { font-size: 1.2em; /* for the rest of the page to show at a normal size */
+                   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+                   width: 950px; margin: auto;
+        }
+        .code { margin: 6px; padding: 9px; background-color: #fdf5ce; border: 1px solid #c77405; }
+        fieldset { padding: 0.5em 2em }
+        hr { margin: 0.5em 0; clear: both }
+        a { cursor: pointer; }
+        #requirements li { line-height: 1.6em; }
+    </style>
+
+</head>
+<body>
+
+<div id="content">
+
+
+
+<div style="clear: both"></div>
+
+<div id="tabs">
+
+   
+
+    <div id="examples">
+   
+    <div>
+        <label for="timepicker_6">Time picker with period (AM/PM) in input and with hours leading 0s :</label>
+        <input type="text" style="width: 70px;" id="timepicker_6" value="01:30 PM" />
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#timepicker_6').timepicker({
+                    showPeriod: true,
+                    showLeadingZero: true
+                });
+            });
+        </script>
+
+        <a onclick="$('#script_6').toggle(200)">[Show code]</a>
+<pre id="script_6" style="display: none" class="code">$('#timepicker').timepicker({
+    showPeriod: true,
+    showLeadingZero: true
+});</pre>
+    </div>
+
+<hr />
+<!-- =============================================================================================================== -->
+
+<div id="footer" style="margin: 40px 0 ">
+
+    Bug, ideas or comments : <a href="mailto:frank@fgelinas.com">frank@fgelinas.com</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

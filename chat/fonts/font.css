@@ -1,0 +1,21 @@
+/* Start Embed Fonts Here */
+@font-face {
+	font-family: 'Rounded_Elegance';
+	src: local('Rounded_Elegance'), local('Rounded_Elegance'), url('Rounded_Elegance.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'DODGE';
+	src: local('DODGE'), local('DODGE'), url('DODGE.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'pirulen';
+	src: local('pirulen'), local('pirulen'), url('pirulen.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'dodger3_1';
+	src: local('dodger/dodger3_1'), local('dodger3_1'), url('dodger/dodger3_1.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Baumans-Regular';
+	src: local('Baumans-Regular'), local('Baumans-Regular'), url('Baumans-Regular.ttf') format('truetype');
+}
