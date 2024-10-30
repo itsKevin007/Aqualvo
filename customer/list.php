@@ -4,7 +4,7 @@ if (!defined('WEB_ROOT')) {
 }
 
 	/* Select data from database */
-	$sql = $conn->prepare("SELECT * FROM bs_customer WHERE is_deleted != '1'");
+	$sql = $conn->prepare("SELECT * FROM bs_customer WHERE is_deleted != '1' ORDER BY is_active DESC ");
 	$sql->execute();
 	
 	
@@ -56,7 +56,17 @@ $errorMessage = (isset($_GET['error']) && $_GET['error'] != '') ? $_GET['error']
 										} else {
 											$image = WEB_ROOT . 'images/customer/noimagelarge.jpg';
 										}
-																				
+
+										$status = $sql_data['is_active'];
+										if($status == 0){
+											$stat_col = 'success';
+											$stats_name = 'Active';
+											$icons = 'ok';
+										}else{
+											$stat_col = 'warning';
+											$stats_name = 'Inactive';
+											$icons = 'remove';
+										}						
 							?>
 										<!-- Start display list of customer !-->
 										<tr>
@@ -75,6 +85,10 @@ $errorMessage = (isset($_GET['error']) && $_GET['error'] != '') ? $_GET['error']
 													<a class="btn btn-small" href="print_schedule.php?id=<?php echo $sql_data['cust_id']; ?>" target="_blank">
 														<i class="icon-calendar"></i> 
 														Schedule
+													</a>
+													<a class="btn btn-<?php echo $stat_col; ?>" href="javascript:inactive(<?php echo $sql_data['cust_id']; ?>);">
+														<i class="icon-white icon-<?php echo $icons; ?>"></i> 														
+														<?php echo $stats_name; ?>
 													</a>
 											</td>
 											<td>

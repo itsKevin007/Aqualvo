@@ -38,6 +38,7 @@
 									<?php if($usr_data['is_product_access'] == 1): ?><li><a class="ajax-link" href="javascript:item();"><i class="icon-hdd"></i><span class="hidden-tablet"> Product</span></a></li><?php endif; ?>			
 									<?php if($usr_data['is_inventory_access'] == 1): ?><li><a class="ajax-link" href="javascript:inv();"><i class="icon-th"></i><span class="hidden-tablet"> Inventory</span></a></li><?php endif; ?>
 									<li><a class="ajax-link" href="<?php echo WEB_ROOT; ?>loading/"><i class="icon-road"></i><span class="hidden-tablet"> Truck Loading</span></a></li>
+									<li><a class="ajax-link" href="javascript:undel();"><i class="icon-tasks"></i><span class="hidden-tablet"> Undelivered</span></a></li>
 									<!--<li><a class="ajax-link" href="javascript:dat();"><i class="icon-calendar"></i><span class="hidden-tablet"> Dates</span></a></li>!-->									
 									<?php if($usr_data['is_transaction_access'] == 1): ?><li><a class="ajax-link" href="javascript:trans();"><i class="icon-file"></i><span class="hidden-tablet"> Transaction</span></a></li><?php endif; ?>
 									<?php if($usr_data['is_return_access'] == 1): ?><li><a class="ajax-link" href="javascript:returns();"><i class="icon-th-large"></i><span class="hidden-tablet"> Return</span></a></li><?php endif; ?>

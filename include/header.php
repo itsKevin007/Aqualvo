@@ -21,7 +21,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="javascript:home();"><span style="font-family:Verdana;"><?php echo $sett_data['system_title']; ?></span></a>
+				<a class="brand" href="javascript:home();"><img style="width:40%;" src="<?php echo WEB_ROOT; ?>images/aqualvo_horizontal.png" /></a>
 								
 				
 				<!-- user dropdown starts -->

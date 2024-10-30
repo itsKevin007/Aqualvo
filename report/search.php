@@ -135,7 +135,7 @@ $errorMessage = (isset($_GET['error']) && $_GET['error'] != '') ? $_GET['error']
 							<?php }else{} ?>
 						</fieldset>					
 							<div class="form-actions">
-								<input type="hidden" name="reportId" value="<?php echo $sql_data['reportId']; ?>" />
+								<input type="hidden" name="reportId" value="<?php echo $sql_data['report_id']; ?>" />
 								<button type="submit" class="btn btn-success">Submit</button>								
 							</div>							
 					</form>							

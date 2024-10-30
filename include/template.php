@@ -34,6 +34,7 @@ $self = WEB_ROOT . 'encrypt.php';
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="<?php echo $sett_data['system_title']; ?>">
 	<meta name="author" content="<?php echo $sett_data['developer']; ?>">	
+	<link rel="shortcut icon" href="<?php echo WEB_ROOT; ?>images/aqualvo.png">
 
 	<!-- The styles -->
 	<?php include ($_SERVER["DOCUMENT_ROOT"] . '/' . $sett_data['directory'] . '/global-library/global-css.php'); ?>	

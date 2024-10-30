@@ -17,6 +17,13 @@ function del(id)
 	}
 }
 
+function inactive(id)
+{
+	if (confirm('Are you sure changing the status of the customer?')) {
+		window.location.href = 'processInac.php?id=' + id;
+	}
+}
+
 function delimg(id)
 {
 	if (confirm('Delete this image?')) {

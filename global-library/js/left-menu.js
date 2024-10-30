@@ -1,5 +1,5 @@
 // JavaScript Document
-var url = 'https://'+window.location.hostname+'/';
+var url = 'http://'+window.location.hostname+'/aqualvo/';
 
 // Main Menu
 function home()
@@ -65,4 +65,9 @@ function forum()
 function chat()
 {
 	window.location.href = url + 'chat/';
+}
+
+function undel()
+{
+	window.location.href = url + 'undelivered/';
 }
